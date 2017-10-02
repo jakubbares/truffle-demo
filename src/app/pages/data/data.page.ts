@@ -151,14 +151,14 @@ export class DataComponent {
         );
         return;
       }
-      this.carService.getCars().subscribe(data => {
-        this.registeredCarsArray = data.data;
-        this.registeredCarsMap = {};
-        this.registeredCarsArray.forEach((car) => {
-          this.registeredCarsMap[car.vin] = car;
-          this.addressToVin[car.address] = car.vin;
-        });
-      });
+      // this.carService.getCars().subscribe(data => {
+      //   this.registeredCarsArray = data.data;
+      //   this.registeredCarsMap = {};
+      //   this.registeredCarsArray.forEach((car) => {
+      //     this.registeredCarsMap[car.vin] = car;
+      //     this.addressToVin[car.address] = car.vin;
+      //   });
+      // });
       if (this.registeredCarsArray.length){
         this.vin = this.registeredCarsArray[0].vin;
       }
@@ -193,7 +193,7 @@ export class DataComponent {
         const car = Object.assign({}, this.car);
         const account =  Object.assign({}, this.account);
         if (!this.registeredCarsMap[car.vin]) {
-          this.registerCar(car);
+          // this.registerCar(car);
           this.registeredCarsArray.push(car);
         }
         this.registeredCarsMap[car.vin] = car;
@@ -224,7 +224,7 @@ export class DataComponent {
         console.log("toUpdateDistance WORKS");
         let car = Object.assign({}, this.car);
         car.distance = this.car.distance;
-        this.updateCar(car);
+        // this.updateCar(car);
         this.registeredCarsMap[car.vin].distance = this.car.distance;
         this.alerts.push({
           type: 'success',

@@ -21,7 +21,11 @@ There are 2 small parts to successfully running this project.
 3. `npm install`
 
 ### Part 2
-For the second part, be sure you're connected to an Ethereum client before running the commands below. If you're new, install [testrpc](https://github.com/ethereumjs/testrpc) to run a local blockchain RPC server. After that, simply run `testrpc` in a new tab.
+Truffle:
+Install Truffle "npm install -g truffle"
+
+Blockchain: 
+For the second part, be sure you're connected to an Ethereum client before running the commands below. If you're new, install testrpc "npm install -g ethereumjs-testrpc" (https://github.com/ethereumjs/testrpc) to run a local blockchain RPC server. After that, simply run `testrpc` in a new tab.
 
 And then in the original tab, run:
 
@@ -55,3 +59,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Technologies & Languages Used
 1. Angular4 (Typescript/Javascript)
 2. Truffle (Solidity)
+
+
+Optional installation: MySql:
+Make sure you have MySql installed. 
+If you dont install XAMPP from https://www.apachefriends.org/index.html
+Create account "root" with password "admin", or change the config file in folder /server/config
+Launch MySQL (On Linux and OSX "mysql -u root -p") (On Windows open app MySQL Shell)
+Create db called "connectedcar" ("create database connectedcar;")
