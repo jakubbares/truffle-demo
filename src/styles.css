@@ -1,0 +1,36 @@
+.has-underline {
+  text-decoration: underline;
+}
+
+.label {
+  text-align: left;
+}
+
+.button-show {
+  cursor: pointer;
+}
+
+.box-option {
+  border: 2px solid black;
+  height: 70px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.text-option > h3{
+  vertical-align: middle;
+  line-height: 70px;
+  font-size: 14px;
+}
+.text-option {
+  display: block;
+  width:100%;
+  cursor: pointer;
+}
+
+table {
+  min-height: 100px;
+  height: 100px;
+}
