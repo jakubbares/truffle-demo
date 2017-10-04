@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {CarService} from '../services/car.service';
 import {routes} from "./app.routes";
-import {DataComponent} from "./pages/data/data.page";
+import {DataComponent} from './pages/data/data.page';
+//import the Insurance component
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import {DataComponent} from "./pages/data/data.page";
   declarations: [
     AppComponent,
     DataComponent
+    //declare the insurance component
   ],
   providers: [CarService],
   bootstrap: [AppComponent]
