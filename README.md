@@ -1,4 +1,6 @@
-# Angular-Truffle
+# Angular-Truffle Demo
+
+### Showcases how to write to Ethereum blockchain thru Angular library Truffle
 
  ------------------------		
 
